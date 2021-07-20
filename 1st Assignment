@@ -5,3 +5,19 @@
       4) Browser JS can run on almost any engine while NodeJS can only run on chrome v8 engine.
       5) NodeJS is without UI but Browser JS has UI.
       
+2. watch & summary 5 points - https://www.youtube.com/watch?v=SmE4OwHztCc&ab_channel=JSConf
+      1) It takes 5 steps for a browser to render a webpage.
+            1) Parse HTML.
+            2) Parse CSS.
+            3) Render Tree.
+            4) Layout.
+            5) Paint.
+      2) JS can affect HTML and CSS at the same time.
+      3) When it comes to render tree there are multiple trees like 
+            1) Render Objects.
+            2) Render Styles.
+            3) Render Layers.
+            4) Line boxes.
+      4) Layout - Its simple as its name.
+      5) Panit - Its the same.
+            
