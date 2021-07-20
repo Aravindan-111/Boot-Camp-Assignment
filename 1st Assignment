@@ -21,3 +21,22 @@
       4) Layout - Its simple as its name.
       5) Panit - Its the same.
             
+4) The page delivered both an 'X-Frame-Options' header and a 'Content-Security-Policy' header with a 'frame-ancestors' directive. Although the 'X-Frame-Options' header alone would have blocked embedding, it has been ignored.
+typeof(1)
+"number"
+typeof(1.1)
+"number"
+typeof('1.1')
+"string"
+typeof(true)
+"boolean"
+typeof(null)
+"object"
+typeof(undefined)
+"undefined"
+typeof([])
+"object"
+typeof({})
+"object"
+typeof(NaN)
+"number"
