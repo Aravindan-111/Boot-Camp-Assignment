@@ -12,28 +12,45 @@
           }
           
           
-2) for in loop
+2) for of loop
 
-            let obj = {
-              Name : 'Aravind',
-              Age : 25,
-              phoneno : 12345
-            }
-
-            for (let i in obj)
-            {
-              console.log(i, ":", obj[i]);
-            }
+          var obj = [
+                { person: "Name 1", age: "2", company: "GUVI" },
+                { person: "Name 2", age: "5", company: "GUVI geek" },
+                { person: "Name 3", age: "8", company: "GUVI geek network" },
+                ];
+          for (let a of obj)
+          {
+            console.log(a);
+          } 
             
             
-3) for of loop
+3) for in loop
 
-            let obj = [12, 32, 56, "r1"];
-            for (let a of obj)
-            {
-              console.log(a);
-            }
+          var obj = [
+                { person: "Name 1", age: "2", company: "GUVI" },
+                { person: "Name 2", age: "5", company: "GUVI geek" },
+                { person: "Name 3", age: "8", company: "GUVI geek network" },
+                ];
+          for (let a in obj)
+          {
+            console.log(obj);
+          }
             
+            
+4) forEach loop
+
+          var obj = [
+                { person: "Name 1", age: "2", company: "GUVI" },
+                { person: "Name 2", age: "5", company: "GUVI geek" },
+                { person: "Name 3", age: "8", company: "GUVI geek network" },
+                ];
+                    obj.forEach(a => console.log(a).person);
+            
+            
+            
+            
+  
             
             
             
