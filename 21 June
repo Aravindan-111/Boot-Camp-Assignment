@@ -49,7 +49,46 @@
             
             
             
-            
+5) Country Flags in Console
+
+                    var xhr = new XMLHttpRequest();
+                    xhr.open("GET", "https://restcountries.eu/rest/v2/all");
+                    xhr.onload = function() {
+                        var b = JSON.parse(this.response);
+                        foo(b[1].flag);
+                    };
+                    xhr.onerror = function() {
+                        console.log('errer', this.statusText);
+                    };
+
+                    xhr.send();
+
+                    function foo(values) {
+                        console.log(values);
+                    }
+                    
+                    
+                    
+6) Country Names, Region, sub-region, population
+
+          var xhr = new XMLHttpRequest();
+          xhr.open("GET", "https://restcountries.eu/rest/v2/all");
+          xhr.onload = function() {
+              var b = JSON.parse(this.response);
+              foo(b);
+          };
+          xhr.onerror = function() {
+              console.log('errer', this.statusText);
+          };
+
+          xhr.send();
+
+          function foo(values) {
+              console.log(values[0].name);
+              console.log(values[0].region);
+              console.log(values[0].subregion);
+              console.log(values[0].population);
+          }
   
             
             
