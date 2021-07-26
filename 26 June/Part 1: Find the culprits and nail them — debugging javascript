@@ -1,0 +1,196 @@
+1. Find the culprit
+
+          <!DOCTYPE html>
+          <html>
+
+          <body>
+              <script>
+                  alert('Im JavaScript!');
+              </script>
+              Whats the error in this ?
+          </body>
+
+          </html>
+          
+          
+2. Find the culprit and invoke the alert
+
+          // HTML FILE
+
+                    <!DOCTYPE html>
+                    <html>
+
+                    <body>
+                        <script src="JS.js"></script>
+                    </body>
+
+                    </html>
+
+          // JS File  
+
+                    alert('I’ m invoked!');
+                    
+          
+3. Explain the below how it works
+
+          Since JS is the most forgiving scripiting language it dosen't care about semi colen.
+
+
+4. Fix the below to alert Guvi geek
+
+          let admin = 9,
+              fname = 10.5;
+          fname = "Guvi";
+          lname = "geek"
+          admin = fname + " " + lname; // Space added as a character
+          alert(admin); // "Guvi geek"
+          
+          
+5. Fix the below to alert hello Guvi geek
+
+          let fname = 10.5;
+          fname = "Guvi";
+          lname = "geek"
+          let name = fname + " " + lname;
+          alert('hello' + " " + name);
+
+
+6. Fix the below to alert sum of two numbers
+
+          let a = prompt("First number?");
+          let b = prompt("Second number?");
+          alert(+a + +b); // ParseInt
+
+
+7. If you run the below scritpt you will get “Code is Blasted”
+Explain Why the Code is blasted and how to diffuse it and get “Diffused”.
+
+          var a = 2 > 12; // variables was in string. we should either use parseInt or change the variables to Numbers.
+          //Don't touch below this
+          if (a) {
+              console.log("Code is Blasted")
+          } else {
+              console.log("Diffused")
+          }
+          
+          
+8. How to get the success in console.         
+
+          let a = typeof(Number) === prompt("Enter a number?");
+          //Don't modify any code below this
+          if (a) {
+              console.log('OMG it works for any number inc 0');
+          } else {
+              console.log("Success");
+          }
+
+
+9. How to get the correct score in console.
+
+          let value = prompt('How many runs you scored in this ball');
+          if (value == 4) { // I number we get in value is string we have to convert it to number or we shound use == instesad of ===
+              console.log("You hit a Four");
+          } else if (value == 6) {
+              console.log("You hit a Six");
+          } else {
+              console.log("I couldn't figure out");
+          }
+          
+10. Fix the code to welcome the Employee
+
+          let login = 'Employee';
+          let message = (login == 'Employee') ? 'Greetings' :
+              (login == 'Director') ? (login == '') :
+              'No login';
+          console.log(message);
+
+
+11. Fix the code to welcome the boss
+
+
+
+
+12. Fix the code to welcome the boss
+
+            let message;
+            let lock; 
+            //Dont change any code below this 
+            if (null || lock || undefined) {
+                message = "Go away";
+            } else {
+                message = "welcome";
+            }
+            console.log(message);
+
+
+13. Fix the code to welcome the boss
+
+          let message;
+          let lock;
+          //Dont change any code below this
+          if (lock && " " || undefined) {
+              message = "Go away";
+          } else {
+              message = "welcome";
+          }
+          console.log(message);
+          
+14. Change the code to print
+    3
+    2
+    1
+
+          let i = 3;
+          while (i) {
+              console.log(i--);
+          }
+
+15. Change the code to print 1 to 10 in 4 lines
+
+          for (i = 1; i <= 10; i++) {
+              console.log(i);
+          }
+
+16. Change the code to print even numbers
+
+          //You are allowed to modify only one character 
+          for (let num = 2; num <= 20; num += 2) {
+              console.log(num)
+          }
+
+
+17. Change the code to print all the gifts
+
+          let gifts = ["teddy bear", "drone", "doll"];
+          for (let i = 0; i < 3; i++) {
+              console.log('Wrapped' + " " + gifts[i] + " " + 'and added a bow!');
+          }
+          
+18. Fix the code to disarm the bomb.
+
+          let countdown = 100;
+          while (countdown > 0) {
+              countdown++;
+              if (countdown == 0) {
+                  console.log("bomb triggered");
+              }
+          }
+
+19. Whats the msg printed and why?
+
+          var lemein = “0”;
+          var lemeout = 0;
+          var msg = “”;
+          if (lemein) {
+           msg += “hi”; // prints hi because lemein is string so in consitional statement its true.
+           }
+          if (lemeout) {
+           msg += ‘Hello’; // will not print hello because lemeout is 0 so in condtional statement it is false.
+          }
+          console.log(msg);
+          
+          
+
+
+
+
