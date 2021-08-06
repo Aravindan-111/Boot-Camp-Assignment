@@ -1,0 +1,12 @@
+#dummy {
+    width: 50px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    display: inline-block;
+    border-style: ridge;
+}
+
+#dummy:hover {
+    background-color: rgb(97, 96, 96);
+}
